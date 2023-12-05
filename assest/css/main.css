@@ -26,6 +26,65 @@ body{
   align-items: center;
   flex-direction: row;
 }
+.focus-text:hover{
+  font-weight: 600 ;
+}
+.home .focus-button:hover{
+  transform: scale(1.03);
+}
+
+.intro .focus-view:hover{
+  font-weight: 600 ;
+  color: #FF9500 ;
+}
+.benefits .focus-card:hover{
+  transform: scale(1.03);
+}
+.benefits .focus-card:hover span{
+  color:#ff9500 ;
+}
+.benefits .focus-card:hover svg{
+  animation: shake1 1s infinite ;
+}
+@keyframes shake1 {
+  0%{
+    transform :translate(0px);
+  }
+  50%{
+    transform :translate(5px, -5px);
+  }
+  100%{
+    transform :translate(0px);
+  }
+}
+.courses .focus-card:hover {
+  transform: scale(1.01);
+}
+.courses .focus-card:hover .data a {
+  font-weight: 600;
+  border: 1px solid rgba(38, 38, 38, 0.121);
+}
+.testimonials .focus-card:hover {
+  transform: scale(1.01);
+}
+.testimonials .focus-card:hover .profile a {
+  border: 1px solid rgba(38, 38, 38, 0.121);
+}
+
+.pricing .plans .focus-button:hover{
+  animation: shake2 1s infinite ;
+}
+@keyframes shake2 {
+  50%{
+    transform :translate(6px);
+  }
+  
+}
+
+main .pricing .item .focus-text:hover{
+  font-size: 15px;
+}
+
 
 
 .top-banner{
@@ -328,14 +387,18 @@ main .benefits .item h3{
 main .benefits .item p{
 color: var(--grey-30, #4C4C4D);
 }
-main .benefits .item svg{
+
+main .benefits .item a{
   align-self: flex-end;
+}
+main .benefits .item svg{
   background: var(--white-99, #FCFCFD);
   width: 54px;
   height: 54px;
   padding: 14px;
   border: 1px solid var(--white-95, #F1F1F3);
 }
+
 
 
 
