@@ -957,37 +957,44 @@ footer .rights {
     top: -15px;
     left: -15px;
   }
-  main .home .buttons .explore-courses ,main .home .buttons .view-pricing {
+  main .home .buttons .explore-courses,
+  main .home .buttons .view-pricing {
     padding: 6px 10px;
   }
-  
+
   main .testimonials .item {
     width: 100%;
   }
-  
-main .testimonials .item img {
-  width: 40px;
-  height: 40px;
-}
-main .testimonials .item .name {
-  font-size: 14px;
-}
-main .testimonials .item a {
-  padding: 8px 10px;
-}
 
-main .pricing .intro{
-  align-items: flex-start;
-}
-main .pricing .intro .row {
-  flex-wrap: wrap; 
-}
-main .pricing .intro a {
-  padding: 8px 10px;
-  flex-basis: 80px;
-}
-footer .Frow {
-  flex-direction: column;
-  gap: 10px;
-}
+  main .testimonials .item img {
+    width: 40px;
+    height: 40px;
+  }
+  main .testimonials .item .name {
+    font-size: 14px;
+  }
+  main .testimonials .item a {
+    padding: 8px 10px;
+  }
+
+  main .pricing .intro {
+    align-items: flex-start;
+  }
+  main .pricing .intro .row {
+    flex-wrap: wrap;
+  }
+  main .pricing .intro a {
+    padding: 8px 10px;
+    flex-basis: 80px;
+  }
+  footer .Frow {
+    flex-direction: column;
+    gap: 10px;
+  }
+  main .pricing .item {
+    width: 100%;
+  }
+  main .pricing .items {
+    padding: 10px;
+  }
 }
