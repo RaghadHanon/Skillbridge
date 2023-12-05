@@ -1,64 +1,64 @@
-@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap");
 
-*{
+* {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
 }
-a{
+a {
   text-decoration: none;
 }
-ul{
-  list-style-type: none ;
+ul {
+  list-style-type: none;
 }
-body{
-  font-family: 'Be Vietnam Pro', sans-serif;
-  background: var(--white-97, #F7F7F8);
+body {
+  font-family: "Be Vietnam Pro", sans-serif;
+  background: var(--white-97, #f7f7f8);
 }
-.container{
+.container {
   width: calc(100% - 264px);
   margin: auto;
 }
-.row{
+.row {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
 }
-.focus-text:hover{
-  font-weight: 600 ;
+.focus-text:hover {
+  font-weight: 600;
 }
-.home .focus-button:hover{
+.home .focus-button:hover {
   transform: scale(1.03);
-  transition: transform .6s;
+  transition: transform 0.6s;
 }
 
-.intro .focus-view:hover{
-  font-weight: 600 ;
-  color: #FF9500 ;
-  transition: font-weight .6s;
+.intro .focus-view:hover {
+  font-weight: 600;
+  color: #ff9500;
+  transition: font-weight 0.6s;
 }
-.benefits .focus-card:hover{
+.benefits .focus-card:hover {
   transform: scale(1.03);
-  
-  transition: transform .4s;
+
+  transition: transform 0.4s;
 }
-.benefits .focus-card:hover span{
-  color:#ff9500 ;
+.benefits .focus-card:hover span {
+  color: #ff9500;
 }
-.benefits .focus-card:hover svg{
-  animation: shake1 1s infinite ;
+.benefits .focus-card:hover svg {
+  animation: shake1 1s infinite;
 }
 @keyframes shake1 {
-  0%{
-    transform :translate(0px);
+  0% {
+    transform: translate(0px);
   }
-  50%{
-    transform :translate(5px, -5px);
+  50% {
+    transform: translate(5px, -5px);
   }
-  100%{
-    transform :translate(0px);
+  100% {
+    transform: translate(0px);
   }
 }
 .courses .focus-card:hover {
@@ -75,23 +75,28 @@ body{
   border: 1px solid rgba(38, 38, 38, 0.121);
 }
 
-.pricing .plans .focus-button:hover{
-  animation: shake2 1s infinite ;
+.pricing .plans .focus-button:hover {
+  animation: shake2 1s infinite;
 }
 @keyframes shake2 {
-  50%{
-    transform :translate(6px);
+  50% {
+    transform: translate(6px);
   }
-  
 }
 
-main .pricing .item .focus-text:hover{
+main .pricing .item .focus-text:hover {
   font-size: 14.5px;
-  transition: font-size .8s;
+  transition: font-size 0.8s;
+}
+main .container {
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 20px 60px;
 }
 
-
-
+/*
 .top-banner{
   color: rgba(255, 255, 255, 1);
   background-color: rgba(255, 149, 0, 1);
@@ -106,18 +111,16 @@ main .pricing .item .focus-text:hover{
   justify-content: center;
   margin: 20px;
 }
-
+*/
 /*header*/
 header {
-  
   position: sticky;
   top: 0px;
   z-index: 100;
 
   border-bottom: 1px solid rgba(241, 241, 243, 1);
 
-  background: var(--white-97, #F7F7F8);
-  
+  background: var(--white-97, #f7f7f8);
 }
 
 header .navbar {
@@ -125,82 +128,78 @@ header .navbar {
 
   padding: 16px 0px 20px;
 }
-header .navbar nav {
-  gap: 70px;
-  
+header .row {
+  gap: 20px 0px;
 }
-header .navbar .logo{
+
+header .navbar nav {
+  gap: 20px 70px;
+}
+header .navbar .logo {
   background-color: rgba(255, 149, 0, 1);
   width: 44px;
   height: 44px;
   border-radius: 8px;
 }
-header .navbar ul{
-  width: 408px;
+header .navbar ul {
+  flex-grow: 1;
 }
-header .navbar a{
+header .navbar a {
   color: rgba(38, 38, 38, 1);
   font-size: 14px;
   line-height: 21px;
-} 
+}
 header .buttons {
   font-size: 14px;
   line-height: 21px;
 
   gap: 30px;
-  
 }
-header .buttons .login{
+header .buttons .login {
   width: 86px;
   padding: 12px 24px;
   background-color: rgba(255, 149, 0, 1);
   border-radius: 8px;
 }
-header .buttons .login a{
+header .buttons .login a {
   color: rgba(255, 255, 255, 1);
 }
 
-
-.main{
+.main {
   padding: 20px 0px;
 }
 /*home section */
-main .home .intro{
-  margin: 80px auto 100px;
-
-  display:flex;
+main .home .intro {
+  display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
-  justify-content:center;
+  justify-content: center;
 }
-main .home .sub-container{
+main .home .sub-container {
   justify-content: flex-start;
   gap: 10px;
+  flex-wrap: nowrap;
 
-  width: fit-content;
-
-  padding: 12px ;
+  padding: 12px;
 
   position: relative;
   top: 0px;
 
-  border:1px solid rgba(241, 241, 243, 1);
+  border: 1px solid rgba(241, 241, 243, 1);
   border-radius: 8px;
   background-color: rgba(252, 252, 253, 1);
-  
+
   text-align: center;
-  
 }
 main .home .sub-container h2 {
   color: rgba(26, 26, 26, 1);
 
   font-size: 36px;
   font-weight: 600;
-  line-height: 54px;
 }
 
-main .home .sub-container .power{
+main .home .sub-container .power {
   width: 48px;
   height: 48px;
 
@@ -210,11 +209,11 @@ main .home .sub-container .power{
 
   background-color: rgba(255, 244, 229, 1);
 }
-main .home .sub-container h2 span{
+main .home .sub-container h2 span {
   color: rgba(255, 149, 0, 1);
 }
 
-main .home .sub-container .decor{
+main .home .sub-container .decor {
   width: 39px;
   height: 43px;
 
@@ -222,36 +221,26 @@ main .home .sub-container .decor{
   top: -30px;
   left: -30px;
 }
-main .home .intro h3{
+main .home .intro h3 {
   color: rgba(38, 38, 38, 1);
-
-  margin-top: 16px;
 
   font-size: 28px;
   font-weight: 500;
-  line-height: 42px;
   align-items: center;
 }
-main .home .intro .describe{
+main .home .intro .describe {
   color: rgba(38, 38, 38, 1);
-
-  margin-top: 10px;
-
-  font-size: 16px;
-  line-height: 24px;
 }
-main .home .buttons{
+main .home .buttons {
   margin-top: 50px;
   justify-content: flex-start;
   gap: 12px;
 }
-main .home .buttons{
-  margin-top: 50px;
+main .home .buttons {
   justify-content: flex-start;
   gap: 12px;
 }
-main .home .buttons .explore-courses{
-  width: 154px;
+main .home .buttons .explore-courses {
   padding: 14px 20px;
   border-radius: 6px;
 
@@ -259,11 +248,10 @@ main .home .buttons .explore-courses{
   font-weight: 600;
   line-height: 21px;
 
-  color:rgba(255, 255, 255, 1);
+  color: rgba(255, 255, 255, 1);
   background-color: rgba(255, 149, 0, 1);
 }
-main .home .buttons .view-pricing{
-  width: 127px;
+main .home .buttons .view-pricing {
   padding: 14px 20px;
   border-radius: 6px;
 
@@ -271,46 +259,47 @@ main .home .buttons .view-pricing{
   font-weight: 500;
   line-height: 21px;
 
-  color:rgba(38, 38, 38, 1);
-  background-color:rgba(255, 255, 255, 1);
+  color: rgba(38, 38, 38, 1);
+  background-color: rgba(255, 255, 255, 1);
 }
 
-main .home .brands{
+main .home .brands {
   padding: 24px;
   border-radius: 8px;
-  
-  
-  background-color:rgba(255, 255, 255, 1);
-  border:1px solid rgba(241, 241, 243, 1);
+
+  background-color: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(241, 241, 243, 1);
 }
-main .home .brands svg{
-  width: calc((100%/7));
+main .home .brands svg {
+  width: calc((100% / 7));
   height: 68px;
   padding: 20px 30px;
 
-  border-right:1px solid rgba(241, 241, 243, 1);
+  border-right: 1px solid rgba(241, 241, 243, 1);
 }
-main .home .brands svg:nth-child(7){
-  width: calc((100%/7));
-  height: 68px;
-  padding: 20px 30px;
-
-  border-right:1px solid rgba(241, 241, 243, 0);
+main .home .brands svg:nth-child(7) {
+  border-right: 1px solid rgba(241, 241, 243, 0);
 }
-
 
 /*play section*/
-main .play{
+main .play {
   margin-top: 80px;
 }
-main .play .row{
+main .play .row {
   height: 649px;
   justify-content: center;
 
   border-radius: 10px;
-  background:  linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url("../img/public/Container.png");
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 0, 0, 0.2) 100%
+    ),
+    url("../img/public/Container.png");
+
+  background-position: center;
 }
-main .play .row svg{
+main .play .row svg {
   width: 54px;
   height: 54px;
   padding: 10px;
@@ -319,30 +308,38 @@ main .play .row svg{
   background-color: rgba(255, 255, 255, 0.2);
 }
 
-
-/*benefits section*/
-main .benefits .container{
-  margin-top: 100px;
-  display:flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  gap: 60px;
+/*main intro of each section*/
+main .container {
+  gap: 60px 0px;
 }
-main .benefits .intro h2{
+main .benefits .container .row,
+main .courses .container .row,
+main .testimonials .container .row,
+main .pricing .container .row {
+  gap: 20px 0px;
+  justify-content: center;
+}
+main .benefits .container .intro,
+main .courses .container .intro,
+main .testimonials .container .intro,
+main .pricing .container .intro {
+  gap: 0px 10px;
+}
+main .intro h2 {
   font-size: 38px;
-  line-height: 57px;
   font-weight: 600;
   width: 100%;
 }
-main .benefits .intro p{
-  width: calc(100% - 350px);
-  font-size: 16px;
-  line-height: 24px;
-
+main .intro {
+  flex-wrap: nowrap;
+  gap: 30px;
 }
-main .benefits .intro a{
-
-  width: 136px;
+main .intro p {
+  font-size: 16px;
+}
+main .benefits .container .intro a,
+main .courses .container .intro a,
+main .testimonials .container .intro a {
   font-size: 14px;
   font-weight: 500;
   line-height: 21px;
@@ -353,15 +350,18 @@ main .benefits .intro a{
   padding: 14px 20px;
 
   border-radius: 6px;
-  border: 1px solid rgba(241, 241, 243, 1)
+  border: 1px solid rgba(241, 241, 243, 1);
 
+  flex-basis: 200px;
 }
+
+/*benefits section*/
 main .benefits .items {
   gap: 20px;
   align-items: stretch;
 }
 main .benefits .item {
-  width: calc((100% - 40px)/3);
+  width: calc((100% - 40px) / 3);
   gap: 40px;
 
   border-radius: 10px;
@@ -370,9 +370,9 @@ main .benefits .item {
   flex-direction: column;
   flex-wrap: wrap;
 
-  background: var(--absolute-white, #FFF);
+  background: var(--absolute-white, #fff);
 }
-main .benefits .item span{
+main .benefits .item span {
   align-self: flex-end;
 
   color: rgba(38, 38, 38, 1);
@@ -380,76 +380,37 @@ main .benefits .item span{
   font-weight: 700;
   line-height: 24px;
 }
-main .benefits .item .data{
-  display:flex ;
+main .benefits .item .data {
+  display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   gap: 10px;
 }
-main .benefits .item h3{
+main .benefits .item h3 {
   color: var(--grey-20, #333);
 }
-main .benefits .item p{
-color: var(--grey-30, #4C4C4D);
+main .benefits .item p {
+  color: var(--grey-30, #4c4c4d);
 }
 
-main .benefits .item a{
+main .benefits .item a {
   align-self: flex-end;
 }
-main .benefits .item svg{
-  background: var(--white-99, #FCFCFD);
+main .benefits .item svg {
+  background: var(--white-99, #fcfcfd);
   width: 54px;
   height: 54px;
   padding: 14px;
-  border: 1px solid var(--white-95, #F1F1F3);
+  border: 1px solid var(--white-95, #f1f1f3);
 }
-
-
-
 
 /*courses section*/
-main .courses .container{
-  margin-top: 100px;
-  display:flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  gap: 60px;
-}
-main .courses .intro h2{
-  font-size: 38px;
-  line-height: 57px;
-  font-weight: 600;
-  width: 100%;
-}
-main .courses .intro p{
-  width: calc(100% - 350px);
-  font-size: 16px;
-  line-height: 24px;
-
-}
-main .courses .intro a{
-
-  width: 136px;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 21px;
-  text-align: center;
-  color: rgba(38, 38, 38, 1);
-  background-color: rgba(252, 252, 253, 1);
-
-  padding: 14px 20px;
-
-  border-radius: 6px;
-  border: 1px solid rgba(241, 241, 243, 1)
-
-}
-
 main .courses .items {
   gap: 20px;
   align-items: stretch;
 }
 main .courses .item {
-  width: calc((100% - 20px)/2);
+  width: calc((100% - 20px) / 2);
   gap: 24px;
 
   border-radius: 10px;
@@ -459,33 +420,34 @@ main .courses .item {
   justify-content: space-between;
   flex-wrap: wrap;
 
-  background: var(--absolute-white, #FFF);
+  background: var(--absolute-white, #fff);
 }
-main .courses .item img{
+main .courses .item img {
   width: 100%;
   border-radius: 8px;
 }
-main .courses .item .detailes{
+main .courses .item .detailes {
   width: 100%;
-  justify-content: flex-start;
   gap: 10px;
 }
-main .courses .item .detailes .length, .courses .level{
 
+main .courses .item .detailes .row {
+  gap: 10px;
+}
+main .courses .item .detailes .length,
+.courses .level {
   padding: 8px 14px;
   border-radius: 6px;
 
   font-size: 14px;
-  color: var(--grey-30, #4C4C4D);
+  color: var(--grey-30, #4c4c4d);
   border-radius: 6px;
-  border: 1px solid var(--white-95, #F1F1F3);
-  background: var(--absolute-white, #FFF);
-
+  border: 1px solid var(--white-95, #f1f1f3);
+  background: var(--absolute-white, #fff);
 }
-main .courses .item .detailes .auther{
+main .courses .item .detailes .auther {
   font-weight: 500;
   color: rgba(38, 38, 38, 1);
-  margin-left: auto;
 }
 main .courses .item .data {
   display: flex;
@@ -503,7 +465,7 @@ main .courses .item .data h3 {
 }
 
 main .courses .item .data p {
-  color:rgba(76, 76, 77, 1);
+  color: rgba(76, 76, 77, 1);
 }
 
 main .courses .item .data a {
@@ -513,93 +475,53 @@ main .courses .item .data a {
 
   width: 100%;
   border-radius: 6px;
-  border: 1px solid var(--white-95, #F1F1F3);
-  background: var(--white-97, #F7F7F8);
+  border: 1px solid var(--white-95, #f1f1f3);
+  background: var(--white-97, #f7f7f8);
 
   text-align: center;
   padding: 14px 24px;
 }
 
-
-
-
 /*courses section*/
-main .testimonials .container{
-  margin-top: 100px;
-  display:flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  gap: 60px;
-}
-main .testimonials .intro h2{
-  font-size: 38px;
-  line-height: 57px;
-  font-weight: 600;
-  width: 100%;
-}
-main .testimonials .intro p{
-  width: calc(100% - 350px);
-  font-size: 16px;
-  line-height: 24px;
-
-}
-main .testimonials .intro a{
-
-  width: 136px;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 21px;
-  text-align: center;
-  color: rgba(38, 38, 38, 1);
-  background-color: rgba(252, 252, 253, 1);
-
-  padding: 14px 20px;
-
-  border-radius: 6px;
-  border: 1px solid rgba(241, 241, 243, 1)
-
-}
-
 main .testimonials .items {
   gap: 20px;
   align-items: stretch;
 }
 main .testimonials .item {
-  width: calc((100% - 20px)/2);
+  width: calc((100% - 20px) / 2);
 
   border-radius: 10px;
 
   border: 1px solid rgba(241, 241, 243, 1);
-  background: var(--absolute-white, #FFF);
+  background: var(--absolute-white, #fff);
 }
-
 main .testimonials .item .profile {
   width: 100%;
   padding: 24px 40px;
   justify-content: flex-start;
-  background: var(--white-99, #FCFCFD);
+  background: var(--white-99, #fcfcfd);
   gap: 10px;
 
   border-top: 1px solid rgba(241, 241, 243, 1);
 }
-main .testimonials .item p{
-  color: var(--grey-30, #4C4C4D);
+main .testimonials .item p {
+  color: var(--grey-30, #4c4c4d);
   padding: 40px;
 }
-main .testimonials .item img{
+main .testimonials .item img {
   width: 50px;
   height: 50px;
   border-radius: 6px;
 }
 
-main .testimonials .item .name{
+main .testimonials .item .name {
   color: var(--grey-20, #333);
   font-weight: 600;
 }
-main .testimonials .item a{
+main .testimonials .item a {
   border-radius: 6px;
-  border: 1px solid var(--white-95, #F1F1F3);
-  background: var(--white-97, #F7F7F8);
+  border: 1px solid var(--white-95, #f1f1f3);
+  background: var(--white-97, #f7f7f8);
 
   color: var(--grey-15, #262626);
   text-align: center;
@@ -608,43 +530,29 @@ main .testimonials .item a{
 
   display: flex;
   padding: 14px 16px;
-  
+
   margin-left: auto;
 }
 
-
-
 /*pricing section*/
 
-main .pricing .container{
-  margin-top: 100px;
-  display:flex;
+main .pricing .intro p {
+  width: calc((100% - 50px) * 5 / 6);
+}
+main .pricing .container .column {
+  display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
-  gap: 60px;
-
-  margin-bottom: 100px;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
 }
-main .pricing .intro h2{
-  font-size: 38px;
-  line-height: 57px;
-  font-weight: 600;
-  width: 100%;
-}
-main .pricing .intro p{
-  width: calc(100% - 350px);
-  font-size: 16px;
-  line-height: 24px;
-
-}
-
-main .pricing .intro .plans{
-  width: 220px;
-  height: 70px;
+main .pricing .intro .plans {
+  flex-grow: 1;
   padding: 12px;
   background-color: rgba(252, 252, 253, 1);
 }
-main .pricing .intro a{
+main .pricing .intro a {
   width: calc(100% / 2);
   font-size: 14px;
   font-weight: 500;
@@ -655,17 +563,24 @@ main .pricing .intro a{
   padding: 14px 20px;
 
   border-radius: 6px;
+
+  flex-basis: 100px;
 }
-main .pricing a:nth-child(1){
+main .pricing a:nth-child(1) {
   color: rgba(255, 255, 255, 1);
   background-color: rgba(255, 149, 0, 1);
 }
-main .pricing .items{
+main .pricing a:nth-child(2) {
+  border: 0px;
+}
+main .pricing .items {
   background-color: rgba(255, 255, 255, 1);
   padding: 50px;
+
+  align-items: stretch;
 }
-main .pricing .item{
-  width: calc((100% - 20px)/2);
+main .pricing .item {
+  width: calc((100% - 20px) / 2);
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -674,13 +589,13 @@ main .pricing .item{
   padding: 40px 24px;
 
   border-radius: 12px;
-  border: 1px solid var(--white-95, #F1F1F3);
-  background: var(--white-99, #FCFCFD);
+  border: 1px solid var(--white-95, #f1f1f3);
+  background: var(--white-99, #fcfcfd);
 
   text-align: center;
 }
 
-main .pricing .item .plan{
+main .pricing .item .plan {
   font-size: 18px;
   font-weight: 500;
   color: var(--grey-15, #262626);
@@ -688,25 +603,25 @@ main .pricing .item .plan{
   padding: 10px 22px;
 
   border-radius: 4px;
-  border: 1px solid var(--orange-90, #FFEACC);
-  background: var(--orange-97, #FFF9F0);
+  border: 1px solid var(--orange-90, #ffeacc);
+  background: var(--orange-97, #fff9f0);
 
   background-color: rgba(255, 234, 204, 1);
 }
-main .pricing .item .price{
+main .pricing .item .price {
   justify-content: center;
   align-items: end;
 }
-main .pricing .item .price span:nth-child(1){
+main .pricing .item .price span:nth-child(1) {
   color: var(--grey-15, #262626);
   font-size: 60px;
   font-weight: 600;
 }
-main .pricing .item .price span:nth-child(2){
-  color: var(--grey-30, #4C4C4D);
+main .pricing .item .price span:nth-child(2) {
+  color: var(--grey-30, #4c4c4d);
   font-weight: 500;
 }
-main .pricing .item .detailes{
+main .pricing .item .detailes {
   display: flex;
   padding: 30px;
   display: flex;
@@ -715,92 +630,90 @@ main .pricing .item .detailes{
   gap: 20px;
   align-self: stretch;
 
-border-radius: 14px 14px 0px 0px;
-border: 1px solid var(--white-95, #F1F1F3);
-background: var(--absolute-white, #FFF);
+  border-radius: 14px 14px 0px 0px;
+  border: 1px solid var(--white-95, #f1f1f3);
+  background: var(--absolute-white, #fff);
 }
 
-main .pricing .item .detailes .title{
+main .pricing .item .detailes .title {
   color: var(--grey-15, #262626);
   text-align: center;
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 4px;
 }
-main .pricing .item  .feature{
+main .pricing .item .feature {
   width: 100%;
   justify-content: flex-start;
   padding: 12px;
   gap: 8px;
   border-radius: 6px;
-  border: 1px solid var(--white-95, #F1F1F3);
+  border: 1px solid var(--white-95, #f1f1f3);
 
-  color: var(--grey-30, #4C4C4D);
+  color: var(--grey-30, #4c4c4d);
   font-size: 14px;
 }
 
-main .pricing .item  .feature .t, main .pricing .x{
+main .pricing .item .feature .t,
+main .pricing .x {
   width: 28px;
   height: 28px;
   padding: 4px;
   border-radius: 4px;
 }
-
-main .pricing .item  .feature .t{
-background-color:  rgba(255, 244, 229, 1);
+main .pricing .row {
+  flex-wrap: nowrap;
 }
-main .pricing .item  .feature .x{
-  border: 1px solid rgba(241, 241, 243, 1);  
+main .pricing .feature {
+  text-align: left;
 }
-main .pricing .item .start{
+main .pricing .item .feature .t {
+  background-color: rgba(255, 244, 229, 1);
+}
+main .pricing .item .feature .x {
+  border: 1px solid rgba(241, 241, 243, 1);
+}
+main .pricing .item .start {
   padding: 18px 24px;
   border-radius: 0px 0px 8px 8px;
-  background: var(--orange-50, #FF9500);
+  background: var(--orange-50, #ff9500);
 
-  color: var(--absolute-white, #FFF);
+  color: var(--absolute-white, #fff);
   text-align: center;
   font-size: 14px;
   font-weight: 600;
 }
 
-
-
-
-
-
 /*footer*/
-footer{
-  background: var(--absolute-white, #FFF);
-  padding:60px 80px 20px;
-
+footer {
+  margin-top: 90px;
+  background: var(--absolute-white, #fff);
+  padding: 60px 80px 20px;
 }
 
-footer .Frow{
-  display:flex;
+footer .Frow {
+  display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-start;
 
   gap: 150px;
-  
-  padding-bottom:60px;
-  
+
+  padding-bottom: 60px;
 }
 
-
-footer .footer-part1{
-  
-  width:calc((100% - 150px)/3);
+footer .footer-part1 {
+  width: calc((100% - 150px) / 3);
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
   gap: 30px;
 }
-footer .footer-part1 .logo img{
+footer .footer-part1 .logo img {
   width: 30px;
   height: 30px;
 }
-footer .footer-part1 .contact{
+footer .footer-part1 .contact {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -809,62 +722,271 @@ footer .footer-part1 .contact{
   gap: 14px;
 }
 
-footer .footer-part1 .contact .row{
+footer .footer-part1 .contact .row {
   justify-content: flex-start;
   gap: 4px;
+  flex-wrap: nowrap;
 }
-footer .footer-part2{
-  
-  width:calc((100% - 150px)*2/3);
+footer .footer-part2 {
+  width: calc((100% - 150px) * 2 / 3);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 10px;
+  flex-grow: 1;
 }
-footer .footer-part2 .footer-item{
+footer .footer-part2 .footer-item {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   gap: 25px;
 }
 
-footer .footer-part2 h2{
+footer .footer-part2 h2 {
   color: var(--grey-15, #262626);
   font-size: 18px;
   font-weight: 600;
 }
-footer .footer-part2 ul{
+footer .footer-part2 ul {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   gap: 8px;
 }
-footer .footer-part2 .special{
+footer .footer-part2 .special {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 14px;
 }
 
-footer .footer-part2 .special svg{
+footer .footer-part2 .special svg {
   width: 44px;
   height: 44px;
   padding: 12px;
-  border: 1px solid var(--white-95, #F1F1F3);
-  background: var(--white-97, #F7F7F8);
+  border: 1px solid var(--white-95, #f1f1f3);
+  background: var(--white-97, #f7f7f8);
   border-radius: 6px;
 }
-footer .footer-part2 ul a{
-  color: var(--grey-35, #59595A);
+footer .footer-part2 ul a {
+  color: var(--grey-35, #59595a);
 }
-footer .rights{
+footer .rights {
   display: block;
   width: 100%;
   color: var(--grey-40, #656567);
   font-size: 14px;
   text-align: center;
 
-  padding-top:30px;
-  border-top: 1px solid rgba(241, 241, 243, 1); 
+  padding-top: 30px;
+  border-top: 1px solid rgba(241, 241, 243, 1);
+}
 
+@media screen and (max-width: 1200px) {
+  .container {
+    width: calc(100% - 70px);
+    margin: auto;
+  }
+
+  main .benefits .item span {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .container {
+    width: calc(100% - 50px);
+    margin: auto;
+  }
+
+  main .pricing .items {
+    padding: 30px;
+    gap: 40px;
+  }
+  main .pricing .item .price span:nth-child(1) {
+    font-size: 50px;
+  }
+  main .pricing .item .price span:nth-child(2) {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  main .pricing .item .detailes {
+    padding: 20px;
+    gap: 15px;
+    align-self: stretch;
+  }
+
+  main .pricing .item .feature .t,
+  main .pricing .x {
+    width: 20px;
+    height: 20px;
+    padding: 2px;
+  }
+
+  footer {
+    padding: 50px 50px 10px;
+  }
+  footer .Frow {
+    gap: 70px;
+  }
+  footer .footer-part1 {
+    width: calc((100% - 50px) / 3);
+  }
+}
+@media screen and (max-width: 800px) {
+  main .courses .item {
+    padding: 30px;
+  }
+  main .benefits .item {
+    width: calc((100% - 20px) / 2);
+  }
+  main .home .brands svg {
+    padding: 10px 20px;
+  }
+  main .home .brands {
+    padding: 14px;
+  }
+  main .benefits .item span {
+    font-size: 40px;
+  }
+  main .testimonials .item .profile {
+    padding: 14px 30px;
+  }
+  main .testimonials .item p {
+    padding: 30px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  main .testimonials .items {
+    justify-content: center;
+  }
+  main .testimonials .item {
+    width: calc((100% - 20px));
+  }
+  main .pricing .items {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  main .pricing .item {
+    width: calc(100% - 100px);
+  }
+  main .home .sub-container .power {
+    width: 38px;
+    height: 38px;
+    padding: 8px;
+  }
+  main .home .sub-container h2 {
+    font-size: 26px;
+  }
+
+  main .home .intro h3 {
+    font-size: 18px;
+  }
+  main .home .intro .describe {
+    font-size: 14px;
+  }
+  main .home .buttons {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  main .benefits .item {
+    width: calc((100% - 20px));
+    gap: 20px;
+  }
+  main .benefits .item svg {
+    width: 44px;
+    height: 44px;
+  }
+  main .courses .item {
+    width: 100%;
+    padding: 30px;
+  }
+  main .pricing .item {
+    gap: 30px;
+  }
+  main .pricing .item .price span:nth-child(1) {
+    font-size: 40px;
+  }
+  main .pricing .item .price span:nth-child(2) {
+    font-size: 13px;
+  }
+  main .pricing .item .detailes .title {
+    font-size: 15px;
+  }
+  main .home .buttons .explore-courses {
+    font-size: 12px;
+  }
+  main .home .buttons .view-pricing {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .container {
+    width: calc(100% - 40px);
+    margin: auto;
+  }
+  main .home .sub-container h2 {
+    font-size: 20px;
+  }
+  main .home .intro h3 {
+    font-size: 15px;
+    font-weight: 600;
+  }
+  main .home .intro .describe {
+    font-size: 13px;
+  }
+  main .home .buttons {
+    margin-top: 20px;
+  }
+  main .home .brands svg {
+    padding: 5px 8px;
+  }
+  main .home .brands {
+    padding: 10px;
+  }
+  main .pricing .item {
+    width: calc(100% - 20px);
+  }
+  main .home .sub-container .decor {
+    width: 29px;
+    height: 33px;
+    position: absolute;
+    top: -15px;
+    left: -15px;
+  }
+  main .home .buttons .explore-courses ,main .home .buttons .view-pricing {
+    padding: 6px 10px;
+  }
+  
+  main .testimonials .item {
+    width: 100%;
+  }
+  
+main .testimonials .item img {
+  width: 40px;
+  height: 40px;
+}
+main .testimonials .item .name {
+  font-size: 14px;
+}
+main .testimonials .item a {
+  padding: 8px 10px;
+}
+
+main .pricing .intro{
+  align-items: flex-start;
+}
+main .pricing .intro .row {
+  flex-wrap: wrap; 
+}
+main .pricing .intro a {
+  padding: 8px 10px;
+  flex-basis: 80px;
+}
+footer .Frow {
+  flex-direction: column;
+  gap: 10px;
+}
 }
