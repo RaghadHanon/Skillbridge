@@ -143,6 +143,7 @@ header .navbar .logo {
 }
 header .navbar ul {
   flex-grow: 1;
+  width: 350px;
 }
 header .navbar a {
   color: rgba(38, 38, 38, 1);
@@ -316,7 +317,7 @@ main .benefits .container .row,
 main .courses .container .row,
 main .testimonials .container .row,
 main .pricing .container .row {
-  gap: 20px 0px;
+  gap: 20px 20px;
   justify-content: center;
 }
 main .benefits .container .intro,
