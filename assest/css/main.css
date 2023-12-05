@@ -31,14 +31,18 @@ body{
 }
 .home .focus-button:hover{
   transform: scale(1.03);
+  transition: transform .6s;
 }
 
 .intro .focus-view:hover{
   font-weight: 600 ;
   color: #FF9500 ;
+  transition: font-weight .6s;
 }
 .benefits .focus-card:hover{
   transform: scale(1.03);
+  
+  transition: transform .4s;
 }
 .benefits .focus-card:hover span{
   color:#ff9500 ;
@@ -82,7 +86,8 @@ body{
 }
 
 main .pricing .item .focus-text:hover{
-  font-size: 15px;
+  font-size: 14.5px;
+  transition: font-size .8s;
 }
 
 
