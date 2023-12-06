@@ -927,7 +927,7 @@ footer .rights {
   }
 }
 
-@media screen and (max-width: 660px) {
+@media screen and (max-width: 680px) {
   main .intro {
     flex-wrap: wrap;
   }
