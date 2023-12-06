@@ -868,6 +868,10 @@ footer .rights {
   main .testimonials .item p {
     padding: 30px;
   }
+  main .play .row {
+    height: 347px;
+    background-size: cover;
+  }
 }
 
 @media screen and (max-width: 755px) {
@@ -912,43 +916,8 @@ footer .rights {
   main .home .buttons {
     margin-top: 30px;
   }
-}
 
-@media screen and (max-width: 600px) {
-  main .benefits .item {
-    width: calc((100% - 20px));
-    gap: 20px;
-  }
-  main .benefits .item svg {
-    width: 44px;
-    height: 44px;
-  }
-  main .courses .item {
-    width: 100%;
-    padding: 30px;
-  }
   
-  main .courses .item .detailes{
-    justify-content: center;
-  }
-  main .pricing .item {
-    gap: 30px;
-  }
-  main .pricing .item .price span:nth-child(1) {
-    font-size: 40px;
-  }
-  main .pricing .item .price span:nth-child(2) {
-    font-size: 13px;
-  }
-  main .pricing .item .detailes .title {
-    font-size: 15px;
-  }
-  main .home .buttons .explore-courses {
-    font-size: 12px;
-  }
-  main .home .buttons .view-pricing {
-    font-size: 12px;
-  }
 }
 
 @media screen and (max-width: 652px) {
@@ -994,6 +963,41 @@ header .buttons a:nth-child(1) {
   border: 0px;
 }
 }
+
+@media screen and (max-width: 600px) {
+  main .benefits .item {
+    width: calc((100% - 20px));
+    gap: 20px;
+  }
+  main .benefits .item svg {
+    width: 44px;
+    height: 44px;
+  }
+  main .courses .item {
+    width: 100%;
+    padding: 30px;
+  }
+  
+  main .pricing .item {
+    gap: 30px;
+  }
+  main .pricing .item .price span:nth-child(1) {
+    font-size: 40px;
+  }
+  main .pricing .item .price span:nth-child(2) {
+    font-size: 13px;
+  }
+  main .pricing .item .detailes .title {
+    font-size: 15px;
+  }
+  main .home .buttons .explore-courses {
+    font-size: 12px;
+  }
+  main .home .buttons .view-pricing {
+    font-size: 12px;
+  }
+}
+
 @media screen and (max-width: 555px) {
   .container {
     width: calc(100% - 40px);
@@ -1073,6 +1077,11 @@ header .buttons a:nth-child(1) {
   main .home .brands svg {
      height: auto;
   }
+  main .play .row {
+    height: 247px;
+    background-size: cover;
+  }
+
 }
 
 @media screen and (max-width: 426px){
@@ -1108,7 +1117,7 @@ main .benefits .container .intro a, main .courses .container .intro a, main .tes
   
 
 }
-@media screen and (max-width: 350px){
+@media screen and (max-width: 380px){
 header .navbar .logo {
   background-color: rgba(255, 149, 0, 1);
   width: 34px;
@@ -1131,5 +1140,9 @@ main .pricing .item .detailes {
 }
 main .home .brands {
   padding: 3px;
+}
+main .play .row {
+  height: 180px;
+  background-size: cover;
 }
 }
