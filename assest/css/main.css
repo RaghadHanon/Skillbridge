@@ -925,6 +925,11 @@ footer .rights {
   footer .footer-part2 {
     width: 100%;
   }
+  
+  main .courses .item {
+    width: 100%;
+    padding: 30px;
+  }
 }
 
 @media screen and (max-width: 680px) {
@@ -941,10 +946,6 @@ footer .rights {
   }
   header .buttons .list {
     display: inline;
-  }
-  main .courses .item {
-    width: 100%;
-    padding: 30px;
   }
   header .buttons {
     gap: 10px;
