@@ -976,7 +976,7 @@ footer .rights {
   }
 }
 
-@media screen and (max-width: 605px) {
+@media screen and (max-width: 643px) {
   main .benefits .item {
     width: 100%;
     gap: 20px;
@@ -1004,7 +1004,6 @@ footer .rights {
   main .home .buttons .view-pricing {
     font-size: 12px;
   }
-
   main .home .brands {
     overflow: scroll;
     flex-wrap: nowrap;
