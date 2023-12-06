@@ -165,6 +165,11 @@ header .buttons .login {
 header .buttons .login a {
   color: rgba(255, 255, 255, 1);
 }
+header .buttons .list{
+  background-color: rgba(255, 255, 255, 0);
+  border: 0px;
+  display: none;
+}
 
 .main {
   padding: 20px 0px;
@@ -228,9 +233,11 @@ main .home .intro h3 {
   font-size: 28px;
   font-weight: 500;
   align-items: center;
+  text-align: center;
 }
 main .home .intro .describe {
   color: rgba(38, 38, 38, 1);
+  text-align: center;
 }
 main .home .buttons {
   margin-top: 50px;
@@ -313,18 +320,21 @@ main .play .row svg {
 main .container {
   gap: 60px 0px;
 }
-main .benefits .container .row,
-main .courses .container .row,
-main .testimonials .container .row,
-main .pricing .container .row {
+main .container .first {
   gap: 20px 20px;
-  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
 }
 main .benefits .container .intro,
 main .courses .container .intro,
 main .testimonials .container .intro,
 main .pricing .container .intro {
-  gap: 0px 10px;
+  gap: 10px 20px;
+  justify-content: flex-start;
 }
 main .intro h2 {
   font-size: 38px;
@@ -334,9 +344,11 @@ main .intro h2 {
 main .intro {
   flex-wrap: nowrap;
   gap: 30px;
+  width: 100%;
 }
 main .intro p {
   font-size: 16px;
+  flex-grow: 1;
 }
 main .benefits .container .intro a,
 main .courses .container .intro a,
@@ -539,25 +551,24 @@ main .testimonials .item a {
 
 main .pricing .intro p {
   width: calc((100% - 50px) * 5 / 6);
+  flex-grow: 1;
 }
 main .pricing .container .column {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
+  flex-direction: column;
   gap: 20px;
 }
 main .pricing .intro .plans {
-  flex-grow: 1;
-  padding: 12px;
-  background-color: rgba(252, 252, 253, 1);
+  padding: 8px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 1);
 }
-main .pricing .intro a {
+main .pricing .intro button {
   width: calc(100% / 2);
   font-size: 14px;
   font-weight: 500;
-  line-height: 21px;
   text-align: center;
   color: rgba(38, 38, 38, 1);
 
@@ -567,11 +578,13 @@ main .pricing .intro a {
 
   flex-basis: 100px;
 }
-main .pricing a:nth-child(1) {
+main .pricing button:nth-child(1) {
   color: rgba(255, 255, 255, 1);
   background-color: rgba(255, 149, 0, 1);
+  border: 0px;
 }
-main .pricing a:nth-child(2) {
+main .pricing button:nth-child(2) {
+  background-color: rgba(255, 255, 255, 1);
   border: 0px;
 }
 main .pricing .items {
@@ -733,7 +746,7 @@ footer .footer-part2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 10px;
+  gap: 20px;
   flex-grow: 1;
 }
 footer .footer-part2 .footer-item {
@@ -857,13 +870,23 @@ footer .rights {
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 755px) {
   main .testimonials .items {
     justify-content: center;
   }
   main .testimonials .item {
     width: calc((100% - 20px));
   }
+  main .testimonials .item p {
+    padding: 40px;
+  }
+  main .testimonials .item .profile {
+    padding: 24px 40px;
+  }
+  main .pricing .intro {
+  flex-direction: column;
+  align-items: flex-start;
+}
   main .pricing .items {
     flex-wrap: wrap;
     justify-content: center;
@@ -904,6 +927,10 @@ footer .rights {
     width: 100%;
     padding: 30px;
   }
+  
+  main .courses .item .detailes{
+    justify-content: center;
+  }
   main .pricing .item {
     gap: 30px;
   }
@@ -923,7 +950,51 @@ footer .rights {
     font-size: 12px;
   }
 }
-@media screen and (max-width: 550px) {
+
+@media screen and (max-width: 652px) {
+  main .intro {
+    flex-wrap: wrap;
+  }
+  main .benefits .container .intro a, main .courses .container .intro a, main .testimonials .container .intro a {
+    flex-basis: 120px;
+  }
+  header .navbar ul {
+    display:none;
+  }
+  header .buttons .list{
+    display: inline;
+  }
+header .buttons{
+  gap: 10px;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  flex-basis: 250px;
+  
+}
+header .buttons a {
+  width: calc(100% / 3);
+  font-size: 14px;
+  text-align: center;
+  justify-content: center;
+  color: rgba(38, 38, 38, 1);
+
+  padding: 10px 10px;
+
+  border-radius: 6px;
+
+  flex-basis: 85px;
+}
+header .buttons a:nth-child(2) {
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(255, 149, 0, 1);
+  border: 0px;
+}
+header .buttons a:nth-child(1) {
+  background-color: rgba(255, 255, 255, 0);
+  border: 0px;
+}
+}
+@media screen and (max-width: 555px) {
   .container {
     width: calc(100% - 40px);
     margin: auto;
@@ -946,9 +1017,6 @@ footer .rights {
   }
   main .home .brands {
     padding: 10px;
-  }
-  main .pricing .item {
-    width: calc(100% - 20px);
   }
   main .home .sub-container .decor {
     width: 29px;
@@ -980,9 +1048,6 @@ footer .rights {
   main .pricing .intro {
     align-items: flex-start;
   }
-  main .pricing .intro .row {
-    flex-wrap: wrap;
-  }
   main .pricing .intro a {
     padding: 8px 10px;
     flex-basis: 80px;
@@ -993,8 +1058,72 @@ footer .rights {
   }
   main .pricing .item {
     width: 100%;
+    width: calc(100% - 50px);
   }
   main .pricing .items {
     padding: 10px;
   }
+
+  main .home .brands svg {
+     height: auto;
+  }
+}
+
+@media screen and (max-width: 426px){
+  main .container {
+    margin-top: 50px;
+  }
+  main .container {
+    gap: 30px 0px;
+  }
+  main .testimonials .item p {
+    padding: 20px;
+  }
+  main .testimonials .item .profile {
+    padding: 12px 20px;
+  }
+  main .pricing .item {
+    width: calc(100% - 20px);
+  }
+  main .home .sub-container {
+    padding: 10px;
+}
+main .home .sub-container .decor {
+  position: absolute;
+  top: -18px;
+  left: -18px;
+}
+main .pricing .intro button {
+  padding: 10px 15px;
+}
+main .benefits .container .intro a, main .courses .container .intro a, main .testimonials .container .intro a {
+  padding: 10px 16px;
+}
+  
+
+}
+@media screen and (max-width: 350px){
+header .navbar .logo {
+  background-color: rgba(255, 149, 0, 1);
+  width: 34px;
+  height: 34px;
+}
+header .buttons{
+  flex-basis: 200px;
+}
+
+header .buttons a {
+  font-size: 13px;
+  padding: 8px 8px;
+  flex-basis: 80px;
+}
+main .pricing .item {
+  padding: 20px 12px;
+}
+main .pricing .item .detailes {
+  padding: 16px;
+}
+main .home .brands {
+  padding: 3px;
+}
 }
