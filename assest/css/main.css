@@ -550,7 +550,6 @@ main .testimonials .item a {
 /*pricing section*/
 
 main .pricing .intro p {
-  width: calc((100% - 50px) * 5 / 6);
   flex-grow: 1;
 }
 main .pricing .container .column {
@@ -564,6 +563,7 @@ main .pricing .intro .plans {
   padding: 8px;
   border-radius: 5px;
   background-color: rgba(255, 255, 255, 1);
+  margin: auto;
 }
 main .pricing .intro button {
   width: calc(100% / 2);
@@ -964,7 +964,7 @@ header .buttons a:nth-child(1) {
 }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 605px) {
   main .benefits .item {
     width: calc((100% - 20px));
     gap: 20px;
@@ -995,6 +995,16 @@ header .buttons a:nth-child(1) {
   }
   main .home .buttons .view-pricing {
     font-size: 12px;
+  }
+
+  main .home .brands{
+    overflow: scroll;
+    flex-wrap: nowrap;
+    gap: 10px;
+  }
+  
+  main .home .brands svg{
+    padding: 6px 6px;
   }
 }
 
