@@ -165,7 +165,7 @@ header .buttons .login {
 header .buttons .login a {
   color: rgba(255, 255, 255, 1);
 }
-header .buttons .list{
+header .buttons .list {
   background-color: rgba(255, 255, 255, 0);
   border: 0px;
   display: none;
@@ -660,6 +660,7 @@ main .pricing .item .detailes .title {
 main .pricing .item .feature {
   width: 100%;
   justify-content: flex-start;
+  align-items: flex-start;
   padding: 12px;
   gap: 8px;
   border-radius: 6px;
@@ -681,6 +682,9 @@ main .pricing .row {
 }
 main .pricing .feature {
   text-align: left;
+}
+main .pricing .item .feature span {
+  width: 85%;
 }
 main .pricing .item .feature .t {
   background-color: rgba(255, 244, 229, 1);
@@ -829,14 +833,6 @@ footer .rights {
     gap: 15px;
     align-self: stretch;
   }
-
-  main .pricing .item .feature .t,
-  main .pricing .x {
-    width: 20px;
-    height: 20px;
-    padding: 2px;
-  }
-
   footer {
     padding: 50px 50px 10px;
   }
@@ -873,6 +869,10 @@ footer .rights {
     height: 347px;
     background-size: cover;
   }
+  main .pricing .items {
+    gap: 20px;
+    padding: 20px;
+  }
 }
 
 @media screen and (max-width: 755px) {
@@ -889,15 +889,15 @@ footer .rights {
     padding: 24px 40px;
   }
   main .pricing .intro {
-  flex-direction: column;
-  align-items: flex-start;
-}
+    flex-direction: column;
+    align-items: flex-start;
+  }
   main .pricing .items {
     flex-wrap: wrap;
     justify-content: center;
   }
   main .pricing .item {
-    width: calc(100% - 100px);
+    width: calc(100% - 60px);
   }
   main .home .sub-container .power {
     width: 38px;
@@ -907,12 +907,13 @@ footer .rights {
   main .home .sub-container h2 {
     font-size: 26px;
   }
-
   main .home .intro h3 {
-    font-size: 18px;
+    font-size: 24px;
+    padding: 0px 30px;
   }
   main .home .intro .describe {
-    font-size: 14px;
+    font-size: 16px;
+    padding: 0px 30px;
   }
   main .home .buttons {
     margin-top: 30px;
@@ -924,67 +925,67 @@ footer .rights {
   footer .footer-part2 {
     width: 100%;
   }
-  
 }
 
-@media screen and (max-width: 652px) {
+@media screen and (max-width: 660px) {
   main .intro {
     flex-wrap: wrap;
   }
-  main .benefits .container .intro a, main .courses .container .intro a, main .testimonials .container .intro a {
+  main .benefits .container .intro a,
+  main .courses .container .intro a,
+  main .testimonials .container .intro a {
     flex-basis: 120px;
   }
   header .navbar ul {
-    display:none;
+    display: none;
   }
-  header .buttons .list{
+  header .buttons .list {
     display: inline;
   }
-header .buttons{
-  gap: 10px;
-  justify-content: flex-end;
-  flex-wrap: nowrap;
-  flex-basis: 250px;
-  
-}
-header .buttons a {
-  width: calc(100% / 3);
-  font-size: 14px;
-  text-align: center;
-  justify-content: center;
-  color: rgba(38, 38, 38, 1);
+  main .courses .item {
+    width: 100%;
+    padding: 30px;
+  }
+  header .buttons {
+    gap: 10px;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    flex-basis: 250px;
+  }
+  header .buttons a {
+    width: calc(100% / 3);
+    font-size: 14px;
+    text-align: center;
+    justify-content: center;
+    color: rgba(38, 38, 38, 1);
 
-  padding: 10px 10px;
+    padding: 10px 10px;
 
-  border-radius: 6px;
+    border-radius: 6px;
 
-  flex-basis: 85px;
-}
-header .buttons a:nth-child(2) {
-  color: rgba(255, 255, 255, 1);
-  background-color: rgba(255, 149, 0, 1);
-  border: 0px;
-}
-header .buttons a:nth-child(1) {
-  background-color: rgba(255, 255, 255, 0);
-  border: 0px;
-}
+    flex-basis: 85px;
+  }
+  header .buttons a:nth-child(2) {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(255, 149, 0, 1);
+    border: 0px;
+  }
+  header .buttons a:nth-child(1) {
+    background-color: rgba(255, 255, 255, 0);
+    border: 0px;
+  }
 }
 
 @media screen and (max-width: 605px) {
   main .benefits .item {
-    width: calc((100% - 20px));
+    width: 100%;
     gap: 20px;
   }
   main .benefits .item svg {
     width: 44px;
     height: 44px;
   }
-  main .courses .item {
-    width: 100%;
-    padding: 30px;
-  }
-  
+
   main .pricing .item {
     gap: 30px;
   }
@@ -1004,13 +1005,13 @@ header .buttons a:nth-child(1) {
     font-size: 12px;
   }
 
-  main .home .brands{
+  main .home .brands {
     overflow: scroll;
     flex-wrap: nowrap;
     gap: 10px;
   }
-  
-  main .home .brands svg{
+
+  main .home .brands svg {
     padding: 6px 6px;
   }
 }
@@ -1022,13 +1023,6 @@ header .buttons a:nth-child(1) {
   }
   main .home .sub-container h2 {
     font-size: 20px;
-  }
-  main .home .intro h3 {
-    font-size: 15px;
-    font-weight: 600;
-  }
-  main .home .intro .describe {
-    font-size: 13px;
   }
   main .home .buttons {
     margin-top: 20px;
@@ -1073,7 +1067,7 @@ header .buttons a:nth-child(1) {
     padding: 8px 10px;
     flex-basis: 80px;
   }
-  
+
   footer {
     padding: 20px 20px 10px;
   }
@@ -1086,16 +1080,15 @@ header .buttons a:nth-child(1) {
   }
 
   main .home .brands svg {
-     height: auto;
+    height: auto;
   }
   main .play .row {
     height: 247px;
     background-size: cover;
   }
-
 }
 
-@media screen and (max-width: 426px){
+@media screen and (max-width: 426px) {
   main .container {
     margin-top: 50px;
   }
@@ -1113,47 +1106,77 @@ header .buttons a:nth-child(1) {
   }
   main .home .sub-container {
     padding: 10px;
-}
-main .home .sub-container .decor {
-  position: absolute;
-  top: -18px;
-  left: -18px;
-}
-main .pricing .intro button {
-  padding: 10px 15px;
-}
-main .benefits .container .intro a, main .courses .container .intro a, main .testimonials .container .intro a {
-  padding: 10px 16px;
-}
-  
+  }
+  main .home .sub-container .decor {
+    position: absolute;
+    top: -18px;
+    left: -18px;
+  }
+  main .pricing .intro button {
+    padding: 10px 15px;
+  }
+  main .benefits .container .intro a,
+  main .courses .container .intro a,
+  main .testimonials .container .intro a {
+    padding: 10px 16px;
+  }
 
+  main .pricing .item {
+    padding: 40px 18px;
+  }
+  main .pricing .item .detailes {
+    padding: 15px;
+  }
 }
-@media screen and (max-width: 380px){
-header .navbar .logo {
-  background-color: rgba(255, 149, 0, 1);
-  width: 34px;
-  height: 34px;
-}
-header .buttons{
-  flex-basis: 200px;
+@media screen and (max-width: 380px) {
+  header .navbar .logo {
+    background-color: rgba(255, 149, 0, 1);
+    width: 34px;
+    height: 34px;
+  }
+  header .buttons {
+    flex-basis: 200px;
+  }
+
+  header .buttons a {
+    font-size: 13px;
+    padding: 8px 8px;
+    flex-basis: 80px;
+  }
+  main .pricing .item {
+    padding: 20px 12px;
+  }
+  main .pricing .item .detailes {
+    padding: 16px;
+  }
+  main .home .brands {
+    padding: 3px;
+  }
+  main .play .row {
+    height: 180px;
+    background-size: cover;
+  }
+  main .pricing .items {
+    padding: 3px;
+  }
+  main .pricing .item .detailes {
+    padding: 10px;
+  }
+  main .pricing .item .feature {
+    padding: 8px;
+  }
+  .container {
+    width: calc(100% - 20px);
+    margin: auto;
+  }
+  main .home .sub-container h2 {
+    font-size: 18px;
+  }
+  main .home .sub-container .decor {
+    position: absolute;
+    top: -15px;
+    left: -15px;
+  }
 }
 
-header .buttons a {
-  font-size: 13px;
-  padding: 8px 8px;
-  flex-basis: 80px;
-}
-main .pricing .item {
-  padding: 20px 12px;
-}
-main .pricing .item .detailes {
-  padding: 16px;
-}
-main .home .brands {
-  padding: 3px;
-}
-main .play .row {
-  height: 180px;
-  background-size: cover;
-}
-}
+
