@@ -372,6 +372,7 @@ main .testimonials .container .intro a {
 main .benefits .items {
   gap: 20px;
   align-items: stretch;
+  justify-content: center;
 }
 main .benefits .item {
   width: calc((100% - 40px) / 3);
