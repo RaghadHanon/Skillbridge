@@ -1154,15 +1154,6 @@ footer .rights {
   main .pricing .item .detailes {
     padding: 16px;
   }
-  main .home .brands {
-    padding: 3px;
-    overflow: scroll;
-    flex-wrap: nowrap;
-    width: 100%;
-  }
-  main .home .brands svg{
-    width: calc((100% - 20px)/3);
-  }
   main .play .row {
     height: 180px;
     background-size: cover;
