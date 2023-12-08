@@ -29,19 +29,20 @@ body {
 .focus-text:hover {
   font-weight: 600;
 }
+header ul .focus-text:hover {
+  font-weight: 600;
+  color: #ff9500;
+}
 .home .focus-button:hover {
   transform: scale(1.03);
   transition: transform 0.6s;
 }
-
-.intro .focus-view:hover {
+main .first .intro .focus-view:hover {
   font-weight: 600;
   color: #ff9500;
-  transition: font-weight 0.6s;
 }
 .benefits .focus-card:hover {
   transform: scale(1.03);
-
   transition: transform 0.4s;
 }
 .benefits .focus-card:hover span {
@@ -577,7 +578,7 @@ main .pricing .intro button {
 
   border-radius: 6px;
 
-  flex-basis: 100px;
+  flex-basis: 80px;
 }
 main .pricing button:nth-child(1) {
   color: rgba(255, 255, 255, 1);
@@ -932,7 +933,7 @@ footer .rights {
   }
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 685px) {
   main .intro {
     flex-wrap: wrap;
   }
@@ -975,6 +976,12 @@ footer .rights {
     background-color: rgba(255, 255, 255, 0);
     border: 0px;
   }
+  main .home .brands {
+    padding: 10px;
+  }
+  main .home .brands svg {
+    padding: 10px 10px;
+  }
 }
 
 @media screen and (max-width: 643px) {
@@ -1005,14 +1012,12 @@ footer .rights {
   main .home .buttons .view-pricing {
     font-size: 12px;
   }
-  main .home .brands {
-    overflow: scroll;
-    flex-wrap: nowrap;
-    gap: 10px;
-  }
 
   main .home .brands svg {
     padding: 6px 6px;
+  }
+  main .home .brands {
+    padding: 5px;
   }
 }
 
@@ -1151,6 +1156,12 @@ footer .rights {
   }
   main .home .brands {
     padding: 3px;
+    overflow: scroll;
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+  main .home .brands svg{
+    width: calc((100% - 20px)/3);
   }
   main .play .row {
     height: 180px;
