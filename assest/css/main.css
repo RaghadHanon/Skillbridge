@@ -149,12 +149,9 @@ header .navbar ul {
 header .navbar a {
   color: rgba(38, 38, 38, 1);
   font-size: 14px;
-  line-height: 21px;
 }
 header .buttons {
   font-size: 14px;
-  line-height: 21px;
-
   gap: 30px;
 }
 header .buttons .login {
@@ -258,7 +255,6 @@ main .home .buttons .explore-courses {
 
   font-size: 14px;
   font-weight: 600;
-  line-height: 21px;
 
   color: rgba(255, 255, 255, 1);
   background-color: rgba(255, 149, 0, 1);
@@ -269,7 +265,6 @@ main .home .buttons .view-pricing {
 
   font-size: 14px;
   font-weight: 500;
-  line-height: 21px;
 
   color: rgba(38, 38, 38, 1);
   background-color: rgba(255, 255, 255, 1);
@@ -309,6 +304,7 @@ main .play .row {
     url("../img/public/Container.png");
 
   background-position: center;
+  background-size: cover;
 }
 main .play .row svg {
   width: 54px;
@@ -336,10 +332,10 @@ main .benefits .container .intro,
 main .courses .container .intro,
 main .testimonials .container .intro,
 main .pricing .container .intro {
-  gap: 10px 20px;
+  gap: 10px 250px;
   justify-content: flex-start;
 }
-main .intro h2 {
+main .first h2 {
   font-size: 38px;
   font-weight: 600;
   width: 100%;
@@ -358,7 +354,6 @@ main .courses .container .intro a,
 main .testimonials .container .intro a {
   font-size: 14px;
   font-weight: 500;
-  line-height: 21px;
   text-align: center;
   color: rgba(38, 38, 38, 1);
   background-color: rgba(252, 252, 253, 1);
@@ -395,7 +390,6 @@ main .benefits .item span {
   color: rgba(38, 38, 38, 1);
   font-size: 60px;
   font-weight: 700;
-  line-height: 24px;
 }
 main .benefits .item .data {
   display: flex;
@@ -405,6 +399,7 @@ main .benefits .item .data {
 }
 main .benefits .item h3 {
   color: var(--grey-20, #333);
+  font-size: 20px;
 }
 main .benefits .item p {
   color: var(--grey-30, #4c4c4d);
@@ -477,7 +472,6 @@ main .courses .item .data {
 main .courses .item .data h3 {
   font-size: 20px;
   font-weight: 600;
-  line-height: 30px;
   color: rgba(38, 38, 38, 1);
 }
 
@@ -663,7 +657,6 @@ main .pricing .item .detailes .title {
 main .pricing .item .feature {
   width: 100%;
   justify-content: flex-start;
-  align-items: flex-start;
   padding: 12px;
   gap: 8px;
   border-radius: 6px;
@@ -804,7 +797,245 @@ footer .rights {
   border-top: 1px solid rgba(241, 241, 243, 1);
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1600px) {
+  header .navbar a {
+    font-size: 18px;
+  }
+  header .navbar ul {
+    width: 450px;
+  }
+  main .home .sub-container h2 {
+    font-size: 48px;
+    font-weight: 700;
+  }
+  main .home .sub-container .power {
+    width: 62px;
+    height: 62px;
+    padding: 14px;
+    border-radius: 6px;
+  }
+  main .home .intro h3 {
+    font-size: 38px;
+  }
+  main .home .intro .describe {
+    font-size: 18px;
+  }
+  main .home .buttons .explore-courses,
+  main .home .buttons .view-pricing {
+    padding: 18px 24px;
+    font-size: 18px;
+  }
+  main .play .row {
+    height: 790px;
+  }
+  main .first h2,
+  main .column h2 {
+    font-size: 48px;
+  }
+  main .intro p,
+  main .column p {
+    font-size: 18px;
+  }
+  main .benefits .container .intro,
+  main .courses .container .intro,
+  main .testimonials .container .intro,
+  main .pricing .container .intro {
+    gap: 10px 300px;
+  }
+  main .benefits .item {
+    gap: 50px;
+    border-radius: 12px;
+    padding: 50px;
+  }
+  main .benefits .container .intro a,
+  main .courses .container .intro a,
+  main .testimonials .container .intro a {
+    font-size: 18px;
+    padding: 84px 24px;
+    border-radius: 8px;
+    flex-basis: 200px;
+  }
+  main .benefits .item span {
+    align-self: flex-end;
+    color: rgba(38, 38, 38, 1);
+    font-size: 70px;
+    font-weight: 700;
+  }
+  main .benefits .item h3 {
+    font-size: 24px;
+  }
+  main .benefits .item p {
+    font-size: 18px;
+  }
+  main .benefits .item svg {
+    background: var(--white-99, #fcfcfd);
+    width: 74px;
+    height: 74px;
+    padding: 20px;
+    border: 1px solid var(--white-95, #f1f1f3);
+  }
+  main .courses .item {
+    width: calc((100% - 20px) / 2);
+    gap: 30px;
+    border-radius: 12px;
+    padding: 50px;
+  }
+  main .courses .item .detailes .length,
+  .courses .level {
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-size: 18px;
+  }
+  main .courses .item .detailes .auther {
+    font-size: 20px;
+  }
+  main .courses .item .data h3 {
+    font-size: 24px;
+  }
+  main .courses .item .data p {
+    font-size: 18px;
+  }
+  main .courses .item .data a {
+    font-size: 18px;
+    border-radius: 8px;
+    text-align: center;
+    padding: 18px 24px;
+  }
+  main .testimonials .item p {
+    padding: 50px;
+    font-size: 18px;
+  }
+
+  main .testimonials .item .profile {
+    padding: 30px 50px;
+    gap: 15px;
+  }
+  main .testimonials .items {
+    gap: 30px;
+  }
+  main .testimonials .item {
+    width: calc((100% - 30px) / 2);
+  }
+  main .testimonials .item img {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+  }
+  main .testimonials .item .profile {
+    padding: 30px 50px;
+    gap: 15px;
+    font-size: 18px;
+  }
+  main .testimonials .item a {
+    border-radius: 8px;
+    font-size: 18px;
+    padding: 18px 14px;
+  }
+  main .courses .items {
+    gap: 30px;
+  }
+  main .courses .item {
+    width: calc((100% - 30px) / 2);
+  }
+  main .benefits .item {
+    width: calc((100% - 60px) / 3);
+  }
+  main .benefits .items {
+    gap: 30px;
+  }
+  main .pricing .intro button {
+    width: calc(100% / 2);
+    font-size: 18px;
+    padding: 14px 30px;
+    flex-basis: 100px;
+  }
+
+  main .pricing .item .plan {
+    font-size: 22px;
+    border-radius: 6px;
+  }
+  main .pricing .item .price span:nth-child(1) {
+    font-size: 80px;
+  }
+  main .pricing .item .price span:nth-child(2) {
+    font-size: 20px;
+  }
+
+  main .pricing .item .detailes .title {
+    font-size: 20px;
+  }
+  main .pricing .item .feature span {
+    font-size: 18px;
+  }
+
+  main .pricing .item .feature {
+    gap: 12px;
+  }
+  main .pricing .item .start {
+    padding: 20px 24px;
+    font-size: 18px;
+  }
+  footer .footer-part1 .logo img {
+    width: 40px;
+    height: 40px;
+  }
+  footer .footer-part1 {
+    width: calc((100% - 150px) / 3);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  footer .footer-part1 .contact {
+    font-size: 18px;
+    gap: 20px;
+  }
+
+  footer .footer-part1 .contact .row {
+    gap: 6px;
+  }
+  footer .footer-part1 .contact .row svg {
+    width: 24px;
+    height: 24px;
+  }
+  footer .footer-part2 h2 {
+    font-size: 20px;
+  }
+  footer .footer-part2 ul a {
+    font-size: 18px;
+  }
+  footer .footer-part2 .special svg {
+    width: 52px;
+    height: 52px;
+    padding: 14px;
+    border-radius: 8px;
+  }
+  footer {
+    margin-top: 90px;
+    background: var(--absolute-white, #fff);
+    padding: 100px 162px 30px;
+  }
+  footer .Frow {
+    padding-bottom: 100px;
+  }
+  footer .Frow {
+    padding-bottom: 100px;
+  }
+  footer .rights {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 1350px) {
+  main .benefits .container .intro,
+  main .courses .container .intro,
+  main .testimonials .container .intro,
+  main .pricing .container .intro {
+    gap: 10px 100px;
+  }
+}
+@media screen and (max-width: 1202px) {
   .container {
     width: calc(100% - 70px);
     margin: auto;
@@ -812,6 +1043,13 @@ footer .rights {
 
   main .benefits .item span {
     font-size: 50px;
+  }
+
+  main .benefits .container .intro,
+  main .courses .container .intro,
+  main .testimonials .container .intro,
+  main .pricing .container .intro {
+    gap: 10px 150px;
   }
 }
 @media screen and (max-width: 1000px) {
@@ -845,14 +1083,20 @@ footer .rights {
   footer .footer-part1 {
     width: calc((100% - 50px) / 3);
   }
-  
+
   main .home .brands img {
-    padding: 20px 30px;;
+    padding: 20px 30px;
+  }
+  main .benefits .container .intro,
+  main .courses .container .intro,
+  main .testimonials .container .intro,
+  main .pricing .container .intro {
+    gap: 10px 80px;
   }
 }
-@media screen and (max-width:910px){
+@media screen and (max-width: 910px) {
   main .home .brands img {
-    padding: 20px 20px;;
+    padding: 20px 20px;
   }
 }
 @media screen and (max-width: 800px) {
@@ -884,6 +1128,12 @@ footer .rights {
   main .pricing .items {
     gap: 20px;
     padding: 20px;
+  }
+  main .benefits .container .intro,
+  main .courses .container .intro,
+  main .testimonials .container .intro,
+  main .pricing .container .intro {
+    gap: 10px 50px;
   }
 }
 
@@ -937,7 +1187,7 @@ footer .rights {
   footer .footer-part2 {
     width: 100%;
   }
-  
+
   main .courses .item {
     width: 100%;
     padding: 30px;
@@ -1098,13 +1348,13 @@ footer .rights {
   }
 }
 
-@media screen and (max-width:520px){
+@media screen and (max-width: 520px) {
   main .home .brands {
     flex-wrap: nowrap;
     overflow: scroll;
   }
   main .home .brands img {
-    width: calc((100% - 90px )/3);
+    width: calc((100% - 90px) / 3);
     padding: 15px 20px;
   }
 }
@@ -1147,7 +1397,6 @@ footer .rights {
   main .pricing .item .detailes {
     padding: 15px;
   }
-
 }
 @media screen and (max-width: 380px) {
   header .navbar .logo {
@@ -1196,11 +1445,9 @@ footer .rights {
     left: -15px;
   }
 }
-@media screen and (max-width:350px){
+@media screen and (max-width: 350px) {
   main .home .brands img {
-    width: calc((100% - 90px )/3);
+    width: calc((100% - 90px) / 3);
     padding: 15px 10px;
   }
 }
-
-
