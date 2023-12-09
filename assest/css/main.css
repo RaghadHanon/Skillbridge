@@ -547,8 +547,11 @@ main .testimonials .item a {
 
 /*pricing section*/
 
-main .pricing .intro p {
+main .pricing .column p {
   flex-grow: 1;
+}
+main .pricing .column h2 {
+  font-size: 38px;
 }
 main .pricing .container .column {
   display: flex;
@@ -1191,6 +1194,12 @@ footer .rights {
   main .courses .item {
     width: 100%;
     padding: 30px;
+  }
+  main .pricing .column h2 {
+    font-size: 28px;
+  }
+  main .first h2 {
+    font-size: 28px;
   }
 }
 
