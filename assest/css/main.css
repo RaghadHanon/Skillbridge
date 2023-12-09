@@ -176,6 +176,9 @@ header .buttons .list {
   padding: 20px 0px;
 }
 /*home section */
+main .home {
+  overflow: hidden;
+}
 main .home .intro {
   display: flex;
   flex-wrap: wrap;
@@ -273,20 +276,19 @@ main .home .buttons .view-pricing {
 }
 
 main .home .brands {
-  padding: 24px;
+  padding: 12px;
   border-radius: 8px;
 
   background-color: rgba(255, 255, 255, 1);
   border: 1px solid rgba(241, 241, 243, 1);
 }
-main .home .brands svg {
+main .home .brands img {
   width: calc((100% / 7));
-  height: 68px;
-  padding: 20px 30px;
+  padding: 20px 40px;
 
   border-right: 1px solid rgba(241, 241, 243, 1);
 }
-main .home .brands svg:nth-child(7) {
+main .home .brands img:nth-child(7) {
   border-right: 1px solid rgba(241, 241, 243, 0);
 }
 
@@ -843,6 +845,15 @@ footer .rights {
   footer .footer-part1 {
     width: calc((100% - 50px) / 3);
   }
+  
+  main .home .brands img {
+    padding: 20px 30px;;
+  }
+}
+@media screen and (max-width:910px){
+  main .home .brands img {
+    padding: 20px 20px;;
+  }
 }
 @media screen and (max-width: 800px) {
   main .courses .item {
@@ -851,7 +862,7 @@ footer .rights {
   main .benefits .item {
     width: calc((100% - 20px) / 2);
   }
-  main .home .brands svg {
+  main .home .brands img {
     padding: 10px 20px;
   }
   main .home .brands {
@@ -977,9 +988,9 @@ footer .rights {
     border: 0px;
   }
   main .home .brands {
-    padding: 10px;
+    padding: 12px;
   }
-  main .home .brands svg {
+  main .home .brands img {
     padding: 10px 10px;
   }
 }
@@ -1013,11 +1024,8 @@ footer .rights {
     font-size: 12px;
   }
 
-  main .home .brands svg {
-    padding: 6px 6px;
-  }
   main .home .brands {
-    padding: 5px;
+    padding: 12px;
   }
 }
 
@@ -1032,7 +1040,7 @@ footer .rights {
   main .home .buttons {
     margin-top: 20px;
   }
-  main .home .brands svg {
+  main .home .brands img {
     padding: 5px 8px;
   }
   main .home .brands {
@@ -1084,15 +1092,22 @@ footer .rights {
     padding: 10px;
   }
 
-  main .home .brands svg {
-    height: auto;
-  }
   main .play .row {
     height: 247px;
     background-size: cover;
   }
 }
 
+@media screen and (max-width:520px){
+  main .home .brands {
+    flex-wrap: nowrap;
+    overflow: scroll;
+  }
+  main .home .brands img {
+    width: calc((100% - 90px )/3);
+    padding: 15px 20px;
+  }
+}
 @media screen and (max-width: 426px) {
   main .container {
     margin-top: 50px;
@@ -1132,6 +1147,7 @@ footer .rights {
   main .pricing .item .detailes {
     padding: 15px;
   }
+
 }
 @media screen and (max-width: 380px) {
   header .navbar .logo {
@@ -1178,6 +1194,12 @@ footer .rights {
     position: absolute;
     top: -15px;
     left: -15px;
+  }
+}
+@media screen and (max-width:350px){
+  main .home .brands img {
+    width: calc((100% - 90px )/3);
+    padding: 15px 10px;
   }
 }
 
