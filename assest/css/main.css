@@ -16,7 +16,7 @@ body {
   background: var(--white-97, #f7f7f8);
 }
 .container {
-  width: calc(100% - 264px);
+  width: calc(100% - 160px);
   margin: auto;
 }
 .row {
@@ -801,6 +801,9 @@ footer .rights {
 }
 
 @media screen and (min-width: 1600px) {
+  .container {
+    width: calc(100% - 324px);
+  }
   header .navbar a {
     font-size: 18px;
   }
@@ -854,7 +857,7 @@ footer .rights {
   main .courses .container .intro a,
   main .testimonials .container .intro a {
     font-size: 18px;
-    padding: 84px 24px;
+    padding: 14px 24px;
     border-radius: 8px;
     flex-basis: 200px;
   }
