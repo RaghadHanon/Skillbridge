@@ -1263,10 +1263,10 @@ footer .rights {
     gap: 20px;
   }
   main .benefits .item svg {
-    width: 44px;
-    height: 44px;
+    width: 54px;
+    height: 54px;
+    padding: 10px;
   }
-
   main .pricing .item {
     gap: 30px;
   }
