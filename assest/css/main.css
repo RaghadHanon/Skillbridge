@@ -35,7 +35,7 @@ header ul .focus-text:hover {
 }
 .home .focus-button:hover {
   transform: scale(1.03);
-  transition: transform 0.6s;
+  transition: transform 0.2s;
 }
 main .first .intro .focus-view:hover {
   font-weight: 600;
@@ -64,6 +64,7 @@ main .first .intro .focus-view:hover {
 }
 .courses .focus-card:hover {
   transform: scale(1.01);
+  transition: transform 0.6s;
 }
 .courses .focus-card:hover .data a {
   font-weight: 600;
@@ -87,7 +88,7 @@ main .first .intro .focus-view:hover {
 
 main .pricing .item .focus-text:hover {
   font-size: 14.5px;
-  transition: font-size 0.8s;
+  transition: font-size 0.5s;
 }
 main .container {
   margin-top: 100px;
@@ -332,7 +333,7 @@ main .benefits .container .intro,
 main .courses .container .intro,
 main .testimonials .container .intro,
 main .pricing .container .intro {
-  gap: 10px 250px;
+  gap: 20px 250px;
   justify-content: flex-start;
 }
 main .first h2 {
@@ -577,7 +578,6 @@ main .pricing .intro button {
 
   border-radius: 6px;
 
-  flex-basis: 80px;
 }
 main .pricing button:nth-child(1) {
   color: rgba(255, 255, 255, 1);
@@ -846,7 +846,7 @@ footer .rights {
   main .courses .container .intro,
   main .testimonials .container .intro,
   main .pricing .container .intro {
-    gap: 10px 300px;
+    gap: 20px 300px;
   }
   main .benefits .item {
     gap: 50px;
@@ -1038,7 +1038,7 @@ footer .rights {
   main .courses .container .intro,
   main .testimonials .container .intro,
   main .pricing .container .intro {
-    gap: 10px 100px;
+    gap: 20px 100px;
   }
 }
 @media screen and (max-width: 1202px) {
@@ -1055,7 +1055,7 @@ footer .rights {
   main .courses .container .intro,
   main .testimonials .container .intro,
   main .pricing .container .intro {
-    gap: 10px 150px;
+    gap: 20px 150px;
   }
 }
 @media screen and (max-width: 1000px) {
@@ -1097,7 +1097,7 @@ footer .rights {
   main .courses .container .intro,
   main .testimonials .container .intro,
   main .pricing .container .intro {
-    gap: 10px 80px;
+    gap: 20px 80px;
   }
 }
 @media screen and (max-width: 910px) {
@@ -1139,7 +1139,7 @@ footer .rights {
   main .courses .container .intro,
   main .testimonials .container .intro,
   main .pricing .container .intro {
-    gap: 10px 50px;
+    gap: 20px 50px;
   }
 }
 
@@ -1188,7 +1188,7 @@ footer .rights {
   }
   footer .Frow {
     flex-direction: column;
-    gap: 10px;
+    gap: 25px;
   }
   footer .footer-part2 {
     width: 100%;
@@ -1315,10 +1315,7 @@ footer .rights {
     top: -15px;
     left: -15px;
   }
-  main .home .buttons .explore-courses,
-  main .home .buttons .view-pricing {
-    padding: 6px 10px;
-  }
+
 
   main .testimonials .item {
     width: 100%;
@@ -1461,5 +1458,9 @@ footer .rights {
   main .home .brands img {
     width: calc((100% - 90px) / 3);
     padding: 15px 10px;
+  }
+  main .home .buttons .explore-courses,
+  main .home .buttons .view-pricing {
+    padding: 10px 16px;
   }
 }
