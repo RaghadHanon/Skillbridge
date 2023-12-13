@@ -72,6 +72,8 @@ main .first .intro .focus-view:hover {
 }
 .testimonials .focus-card:hover {
   transform: scale(1.01);
+  transition: transform 0.6s;
+
 }
 .testimonials .focus-card:hover .profile a {
   border: 1px solid rgba(38, 38, 38, 0.121);
